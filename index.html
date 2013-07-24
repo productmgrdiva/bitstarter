@@ -1,8 +1,11 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
+    <title>TripInATrip</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -80,8 +83,8 @@
 
       /* Marketing Copy and Footer */
       .copy {
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
+        /*padding-top: 2.5%;*/
+        /*padding-bottom: 2.5%;*/
         text-align: justify;
       }
       .asset {
@@ -112,7 +115,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Bitstarter</a>
+          <a class="brand" href="#">Your Stopover Planner</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
@@ -133,23 +136,49 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Product</h1>
+          <h1>Trip-In-a-Trip</h1>
         </div>
       </div> 
       <div class="row-fluid subheading">
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">One sentence description.</p>
+          <p class="lead">Change your layovers to memorable vacations en-route Home !</p>
         </div>
       </div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <iframe width="480" height="270" src="//www.youtube.com/embed/P-BDOY9OEKc?rel=0" frameborder="0" allowfullscreen></iframe>        
+        </div>
+        <div class="span5 copy">
+          <p>
+            Home is India!<br>
+            That's where a lot of South Asians go every year or two.<br>
+            To spend time with family and friends and reconnect again.<br>
+            But for most of us, that means using up all our vacation days.
+            Wouldn't it be great if we can visit a new place on the way to India
+             or on the way back?
+         </p>
+          <p>
+             That is what Trip-In-A-Trip is about.<br>
+             Taking the pain out of planning for your stopover trip.<br>
+             We search all the various travel sites and airline deals to bring the best
+             stopover deal to fit your budget and time.
+          </p>
         </div>
 
-        <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-        <div class="span5 actions">
+      </div>
+
+
+
+      <!-- Beyond this part the marketing copy begins. -->
+      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+      <!-- http://placehold.it -->
+
+      <div class="row-fluid pitch">
+              <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
+        <div class="span5 actions offset4">
           <div class="span8 offset2">
             <div class="statistics">
               <div class="span4">
@@ -192,53 +221,7 @@
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
           </div>
         </div>
-      </div>
-
-      <!-- Beyond this part the marketing copy begins. -->
-      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
-      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-      <!-- http://placehold.it -->
-      <div class="row-fluid section1">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
-        <div class="span5 copy">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
-        </div>
-      </div>
-
-      <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
-        </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
-      </div>
+       </div>
 
       <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
       <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
@@ -251,25 +234,13 @@
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
+                    Is there a website for this application?
                   </a>
                 </div>
                 <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    Frequently Asked Question.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseTwo">
-                    What's a Frequently Asked Question?
-                  </a>
-                </div>
-                <div id="collapseTwo" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    A question which is commonly asked by users.
+                    Yes. We are working on a mobile site and will be available shortly.
+                    Please watch this space for more news!
                   </div>
                 </div>
               </div>
@@ -292,5 +263,4 @@
     </div>
   </body>
 </html>
-
 
